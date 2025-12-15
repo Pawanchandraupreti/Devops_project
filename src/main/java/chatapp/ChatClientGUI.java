@@ -111,7 +111,7 @@ public class ChatClientGUI extends JFrame {
             new EmptyBorder(10, 15, 10, 15)
         ));
         
-        // Fix placeholder behavior - clear on focus/click
+        // placeholder behavior - clear on focus/click
         usernameField.addFocusListener(new FocusAdapter() {
             @Override
             public void focusGained(FocusEvent e) {
@@ -230,7 +230,7 @@ public class ChatClientGUI extends JFrame {
         
         chatPanel.add(chatScrollPane, BorderLayout.CENTER);
         
-        // Input panel - removed the + button
+        // Input panel 
         JPanel inputPanel = new JPanel(new BorderLayout(10, 0));
         inputPanel.setBackground(CHAT_BG);
         inputPanel.setBorder(BorderFactory.createCompoundBorder(
@@ -394,7 +394,7 @@ public class ChatClientGUI extends JFrame {
                 // Send to server - it will broadcast back to everyone including us
                 out.println(username + ": " + message);
             } else {
-                // Only show locally if not connected (demo mode)
+                // Only show locally if not connected 
                 String timestamp = new SimpleDateFormat("h:mm a").format(new Date());
                 appendMessage(message, "You", timestamp, true);
             }
