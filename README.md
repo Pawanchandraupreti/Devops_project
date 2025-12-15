@@ -49,7 +49,7 @@ chat-application/
 Run the server first:
 
 ```bash
-java -cp target/classes com.chatapp.ChatServer
+java -cp target/classes chatapp.ChatServer
 ```
 
 Server runs on **port 5000** by default.
