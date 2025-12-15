@@ -1,4 +1,4 @@
-package com.chatapp;
+package chatapp;
 
 import javax.swing.*;
 import javax.swing.border.*;
